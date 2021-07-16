@@ -2,6 +2,7 @@
     --vermelho: #E50914;
     --preta: #141414;
     --white: #fff;
+
 }
 
 *{
@@ -12,8 +13,33 @@
 
 /* elementos base*/
 body{
-    background: var(--preta);
     font-family: 'Times New Roman', Times, serif
+}
+
+.gradiente{
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(45deg, #EC4646,
+    #663F3F,
+    #51C2D5,
+    #252525,
+    #414141);
+    background-size: 300% 300%;
+    animation: colorido 15s ease infinite;
+}
+
+@keyframes colorido{
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 header .container {
@@ -117,7 +143,3 @@ a{
     transition: 0.19s
 }
 
-.poster1{
-    margin: auto;
-    background: linear-gradient( rgba(0,0,0,.50), rgba(0,0,0,.50)100%),url(/img/poster1.jpg);
-}
