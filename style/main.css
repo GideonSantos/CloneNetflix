@@ -72,6 +72,14 @@ header nav a:hover{
     width: 70%;
 }
 
+a:link{ 
+ text-decoration: none;
+} 
+
+a{
+    color:var(--white);
+}
+
 .botao{
     background-color: rgba(0,0,0,.50);
     border: none;
@@ -107,4 +115,9 @@ header nav a:hover{
 .carrossel:hover{
     transform: scale(1.01);
     transition: 0.19s
+}
+
+.poster1{
+    margin: auto;
+    background: linear-gradient( rgba(0,0,0,.50), rgba(0,0,0,.50)100%),url(/img/poster1.jpg);
 }
